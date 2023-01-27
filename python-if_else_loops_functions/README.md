@@ -32,6 +32,10 @@
   * [`11-pow.py`](./11-pow.py) - Computes `a` to the power of `b` and return the value.
 * **12. Fizz Buzz**
   * [`12-fizzbuzz.py`](./12-fizzbuzz.py) - Fizz buzz exercise.
+* **13. Smile in the mirror**
+  * [`100-print_tebahpla.py`](./100-print_tebahpla.py) - Prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (`z` in lowercase and `Y` in uppercase), not followed by a new line.
+* **14. Remove at position**
+  * [`101-remove_char_at.py`](./101-remove_char_at.py) - Creates a copy of the string, removing the character at the position `n`.
 
 ## Author
 * Felipe Villamizar - [GitHub](https://github.com/felipevcc)
