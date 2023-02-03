@@ -20,6 +20,10 @@
   * [`5-raise_exception.py`](./5-raise_exception.py) - Function that raises a type exception.
 * **6. Raise a message**
   * [`6-raise_exception_msg.py`](./6-raise_exception_msg.py) - Function that raises a name exception with a message.
+* **7. Safe integer print with error message**
+  * [`100-safe_print_integer_err.py`](./100-safe_print_integer_err.py) - Function that prints an integer.
+* **8. Safe function**
+  * [`101-safe_function.py`](./101-safe_function.py) - Function that executes a function safely.
 
 ## Author
 * Felipe Villamizar - [GitHub](https://github.com/felipevcc)
