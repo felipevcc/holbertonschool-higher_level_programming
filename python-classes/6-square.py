@@ -35,7 +35,8 @@ class Square:
     @position.setter
     def position(self, value):
         """Type and length validation"""
-        if not isinstance(value, tuple) or len(value) != 2:
+        if (not isinstance(value, tuple) or len(value) != 2 or
+                not all(isinstance(num, int) and num >= 0 for num in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
@@ -48,8 +49,9 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            for i in range(self.__size):
+            print("{}".format("\n" * self.__position[1]), end="")
+            for _ in range(self.__size):
                 print("{}".format(" " * self.__position[0]), end="")
-                for j in range(self.__size):
+                for _ in range(self.__size):
                     print("#", end="")
                 print()
