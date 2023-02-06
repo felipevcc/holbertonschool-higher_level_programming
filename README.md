@@ -10,6 +10,7 @@ Repository with several projects and programming exercises in Python carried out
 * [Python - Data Structures: Lists, Tuples](./python-data_structures)
 * [Python - More Data Structures: Set, Dictionary](./python-more_data_structures)
 * [Python - Exceptions](./python-exceptions)
+* [Python - Classes and Objects](./python-classes)
 
 ## Author
 * Felipe Villamizar - [GitHub](https://github.com/felipevcc)
