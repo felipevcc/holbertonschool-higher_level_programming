@@ -11,6 +11,8 @@ Repository with several projects and programming exercises in Python carried out
 * [Python - More Data Structures: Set, Dictionary](./python-more_data_structures)
 * [Python - Exceptions](./python-exceptions)
 * [Python - Classes and Objects](./python-classes)
+* [Python - Test-driven development](./python-test_driven_development)
+* [Python - More Classes and Objects](./python-more_classes)
 
 ## Author
 * Felipe Villamizar - [GitHub](https://github.com/felipevcc)
