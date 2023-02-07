@@ -1,0 +1,51 @@
+Doctest for integer sum function
+--------------------------------
+
+Import .py module:
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Basic use:
+    >>> add_integer(1, 2)
+    3
+
+Negative number:
+    >>> add_integer(1, -2)
+    -1
+
+Float number:
+    >>> add_integer(1.4, 2)
+    3
+
+String argument a:
+    >>> add_integer("1", 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+String argument b:
+    >>> add_integer(1, "2")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+Float overflow:
+    >>> add_integer(1, float('-inf'))
+    Traceback (most recent call last):1
+    ...
+    OverflowError: cannot convert float infinity to integer
+
+Float NaN:
+    >>> add_integer(1, float('NaN'))
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
+
+One argument:
+    >>> add_integer(1)
+    99
+
+No arguments:
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
