@@ -30,7 +30,7 @@ String argument b:
 
 Float overflow:
     >>> add_integer(1, float('-inf'))
-    Traceback (most recent call last):1
+    Traceback (most recent call last):
     ...
     OverflowError: cannot convert float infinity to integer
 
