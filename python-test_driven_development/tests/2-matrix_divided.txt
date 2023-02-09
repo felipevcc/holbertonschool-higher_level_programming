@@ -1,0 +1,45 @@
+Doctest for function that divides a matrix
+------------------------------------------
+
+Import .py module:
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Basic use:
+    >>> matrix_divided([[1, 2], [3, 4]], 3)
+    [[0.33, 0.67], [1.0, 1.33]]
+
+Negative number:
+    >>> matrix_divided([[3, 9], [12, 15]], -3)
+    [[-1.0, -3.0], [-4.0, -5.0]]
+
+String argument:
+    >>> matrix_divided([[1, 2], [3, 4]], "3")
+    Traceback (most recent call last):
+    ...
+    TypeError: div must be a number
+
+Matrix with only one number:
+    >>> matrix_divided([[3]], 3)
+    [[1.0]]
+
+Division by zero:
+    >>> matrix_divided([[3, 9], [12, 15]], 0)
+    Traceback (most recent call last):
+    ...
+    ZeroDivisionError: division by zero
+
+Lists with different sizes:
+    >>> matrix_divided([[3, 9], [12, 15, 3]], 3)
+    Traceback (most recent call last):
+    ...
+    TypeError: Each row of the matrix must have the same size
+
+String element inside an array:
+    >>> matrix_divided([[3, "9"], [15, 3]], 3)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Float overflow:
+    >>> matrix_divided([[1, 2], [3, 4]], float('inf'))
+    [[0.0, 0.0], [0.0, 0.0]]
