@@ -10,7 +10,7 @@ Basic use:
 
 One argument:
     >>> say_my_name("Bob")
-    My name is Bob
+    My name is Bob 
 
 First int argument:
     >>> say_my_name(12, "Lenon")
