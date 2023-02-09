@@ -1,0 +1,31 @@
+Doctest for function that prints an indented text
+----------------------------------
+
+Import .py module:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Basic use:
+    >>> text_indentation("Holberton School")
+    Holberton School
+
+String with blank lines:
+    >>> text_indentation("Holberton. School? How are you: John")
+    Holberton.
+    <BLANKLINE>
+    School?
+    <BLANKLINE>
+    How are you:
+    <BLANKLINE>
+    John
+
+Int argument:
+    >>> text_indentation(12)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+No arguments:
+    >>> text_indentation()
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
