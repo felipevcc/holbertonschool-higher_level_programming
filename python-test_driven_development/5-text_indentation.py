@@ -17,4 +17,7 @@ def text_indentation(text):
             print(text[idx_prev:i + 1], end="")
         elif text[i] in sep:
             print(text[idx_prev:i + 1] + '\n')
-            idx_prev = i + 2
+            if (text[i + 1] == " "):
+                idx_prev = i + 2
+            else:
+                idx_prev = i + 1
