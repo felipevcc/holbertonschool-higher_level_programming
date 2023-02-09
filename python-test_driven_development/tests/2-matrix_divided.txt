@@ -45,7 +45,7 @@ Float overflow:
     [[0.0, 0.0], [0.0, 0.0]]
 
 One argument:
-    >>> matrix_divided([1, 2], [3, 4])
+    >>> matrix_divided([[1, 2], [3, 4]])
     Traceback (most recent call last):
     ...
     TypeError: matrix_divided() missing 1 required positional argument: 'div'
