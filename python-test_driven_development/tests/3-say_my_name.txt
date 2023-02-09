@@ -1,0 +1,31 @@
+Doctest for function that says my name
+--------------------------------------
+
+Import .py module:
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Basic use:
+    >>> say_my_name("Bob", "Lenon")
+    My name is Bob Lenon
+
+One argument:
+    >>> say_my_name("Bob")
+    My name is Bob
+
+First int argument:
+    >>> say_my_name(12, "Lenon")
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+Second int argument:
+    >>> say_my_name("Bob", 12)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string
+
+No arguments:
+    >>> say_my_name()
+    Traceback (most recent call last):
+    ...
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'

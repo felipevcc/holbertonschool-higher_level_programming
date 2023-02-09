@@ -4,7 +4,7 @@
 
 def matrix_divided(matrix, div):
     """number validation"""
-    bool_matrix = [[isinstance(num, int) or isinstance(num, float)
+    bool_matrix = [[isinstance(num, (int, float))
                     for num in list] for list in matrix]
 
     """list length validation"""
@@ -16,7 +16,7 @@ def matrix_divided(matrix, div):
                         "of integers/floats")
     elif not all(bool_list):
         raise TypeError("Each row of the matrix must have the same size")
-    elif not isinstance(div, int) and not isinstance(div, float):
+    elif not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
     elif div == 0:
         raise ZeroDivisionError("division by zero")
