@@ -18,8 +18,6 @@ def text_indentation(text):
         elif text[i] in sep:
             print(text[idx_prev:i + 1] + '\n')
             idx_prev = i + 1
-            j = i + 1
             """deletes spaces"""
-            while text[j] == " ":
+            while text[idx_prev] == " ":
                 idx_prev += 1
-                j += 1
