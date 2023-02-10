@@ -11,9 +11,9 @@ class TestMaxInteger(unittest.TestCase):
         """Basic use"""
         self.assertEqual(max_integer([1, 4, 2, 3]), 4)
 
-    def text_max_at_end(self):
+    def test_max_at_end(self):
         """Max at the end"""
-        self.assertEqual(max_integer([1, 2, 3, 4]), 4)
+        self.assertEqual(max_integer([1, 2, 3]), 3)
 
     def test_max_at_beginning(self):
         """Max at the beginning"""
