@@ -33,7 +33,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_one_element(self):
         """List of one element"""
-        self.assertEqual(max_integer([3]))
+        self.assertEqual(max_integer([3]), 3)
 
     def test_empty_list(self):
         """List is empty"""
