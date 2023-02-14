@@ -1,0 +1,30 @@
+Doctest for function that prints a sorted list
+-----------------------------------
+
+Import .py module:
+    >>> MyList = __import__('1-my_list').MyList
+
+Sorted append:
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.print_sorted()
+    [1, 2, 3]
+
+Not sorted append:
+    >>> my_list = MyList()
+    >>> my_list.append(0)
+    >>> my_list.append(-3)
+    >>> my_list.append(4)
+    >>> my_list.print_sorted()
+    [-3, 0, 4]
+
+Check return:
+    >>> print(my_list)
+    [0, -3, 4]
+
+Empty list:
+    >>> my_list = MyList()
+    >>> my_list.print_sorted()
+    []
