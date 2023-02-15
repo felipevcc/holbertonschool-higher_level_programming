@@ -14,7 +14,7 @@ class Student:
     def to_json(self, attrs=None):
         """Retrieves a dict representation of a instance"""
         dict = self.__dict__
-        if not attrs:
+        if attrs is None:
             return dict
 
         """Retrieves the attributes that are in a list"""
