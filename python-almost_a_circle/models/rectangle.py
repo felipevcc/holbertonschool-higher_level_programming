@@ -77,11 +77,23 @@ class Rectangle(Base):
     def display(self):
         """Prints rectangle with #"""
         if self.__width <= 0 or self.__height <= 0:
-            print("")
+            print()
             return
 
         symbol = "#"
+        print("{}".format("\n" * self.__y), end="")
         for _ in range(self.__height):
+            print("{}".format(" " * self.__x), end="")
             for _ in range(self.__width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+        """Returns the rectangle description"""
+        name = str(self.__class__.__name__)
+        id = str(self.id)
+        w = str(self.__width)
+        h = str(self.__height)
+        x = str(self.__x)
+        y = str(self.__y)
+        return f"[{name}] ({id}) {x}/{y} - {w}/{h}"
