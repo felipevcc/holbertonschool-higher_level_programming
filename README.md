@@ -16,6 +16,7 @@ Repository with several projects and programming exercises in Python carried out
 * [Python - Everything is object](./python-everything_is_object)
 * [Python - Inheritance](./python-inheritance)
 * [Python - Input/Output](./python-input_output)
+* [Python - Almost a circle](./python-almost_a_circle)
 
 ## Author
 * Felipe Villamizar - [GitHub](https://github.com/felipevcc)
