@@ -18,3 +18,37 @@ class Square(Rectangle):
         x = str(self.x)
         y = str(self.y)
         return f"[{name}] ({id}) {x}/{y} - {size}"
+
+    @property
+    def size(self):
+        """Retrieves size"""
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """Assignment - Type and value validation"""
+        if type(value) != int:
+            raise TypeError("width must be an integer")
+        elif value <= 0:
+            raise ValueError("width must be > 0")
+        self.width = value
+        self.height = value
+
+    def update(self, *args, **kwargs):
+        """Assigns an argument to each attribute"""
+        attrs = ["id", "size", "x", "y"]
+        if len(args) != 0:
+            for i in range(len(args)):
+                setattr(self, attrs[i], args[i])
+        elif len(kwargs) != 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+
+    def to_dictionary(self):
+        """Returns the dict representation of a square"""
+        return {
+            "id": self.id,
+            "size": self.size,
+            "x": self.x,
+            "y": self.y
+        }

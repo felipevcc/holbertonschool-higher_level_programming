@@ -107,3 +107,13 @@ class Rectangle(Base):
         x = str(self.__x)
         y = str(self.__y)
         return f"[{name}] ({id}) {x}/{y} - {w}/{h}"
+
+    def to_dictionary(self):
+        """Returns the dict representation of a rectangle"""
+        return {
+            "id": self.id,
+            "width": self.__width,
+            "height": self.__height,
+            "x": self.__x,
+            "y": self.__y
+        }
