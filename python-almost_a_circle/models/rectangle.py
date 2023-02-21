@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""class Rectangle that inherits from Base"""
+"""Class Rectangle that inherits from Base"""
 from models.base import Base
 
 
@@ -88,12 +88,15 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Assigns an argument to each attribute"""
         attrs = ["id", "width", "height", "x", "y"]
         if len(args) != 0:
             for i in range(len(args)):
                 setattr(self, attrs[i], args[i])
+        elif len(kwargs) != 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     def __str__(self):
         """Returns the rectangle description"""
