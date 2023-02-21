@@ -88,6 +88,13 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
+    def update(self, *args):
+        """Assigns an argument to each attribute"""
+        attrs = ["id", "width", "height", "x", "y"]
+        if len(args) != 0:
+            for i in range(len(args)):
+                setattr(self, attrs[i], args[i])
+
     def __str__(self):
         """Returns the rectangle description"""
         name = str(self.__class__.__name__)
