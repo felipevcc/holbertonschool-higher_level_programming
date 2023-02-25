@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Rectangle tests"""
+"""Tests for the Rectangle class with unittest"""
 import unittest
 from models.rectangle import Rectangle
 from models.base import Base
@@ -8,7 +8,7 @@ from contextlib import redirect_stdout
 
 
 class TestRectangle(unittest.TestCase):
-    """Class Rectangle tests"""
+    """Class tests"""
 
     def test_rectangle_creation_1(self):
         rect = Rectangle(1, 2)
@@ -45,7 +45,6 @@ class TestRectangle(unittest.TestCase):
         self.assertRaises(TypeError, Rectangle, 1, 1, y=2.5)
 
     def test_value(self):
-        '''width, height, x, y'''
         self.assertRaises(ValueError, Rectangle, -5, 1)
         self.assertRaises(ValueError, Rectangle, 0, 1)
         self.assertRaises(ValueError, Rectangle, 1, 0)
@@ -172,7 +171,6 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(rect.y, 4)
 
     def test_basic_display(self):
-        """Test display without x and y"""
         r = Rectangle(2, 2)
         input_string = io.StringIO()
         res_str = "##\n##\n"

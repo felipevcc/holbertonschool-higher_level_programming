@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""Rectangle tests"""
+"""Tests for the Base class with unittest"""
 import unittest
 from models.square import Square
 import os
 
 
 class TestSquare(unittest.TestCase):
-    """class Rectangle tests"""
+    """Class tests"""
 
     def test_Square_creation_1(self):
         square = Square(1)
