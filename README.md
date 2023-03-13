@@ -1,6 +1,6 @@
 # Holberton School Higher-level Programming
 
-Repository with several projects and programming exercises in Python carried out during studies at [Holberton School](https://www.holbertonschool.com/).
+Repository with several projects and programming exercises in Python and SQL carried out during studies at [Holberton School](https://www.holbertonschool.com/).
 
 ## Projects
 
@@ -17,6 +17,9 @@ Repository with several projects and programming exercises in Python carried out
 * [Python - Inheritance](./python-inheritance)
 * [Python - Input/Output](./python-input_output)
 * [Python - Almost a circle](./python-almost_a_circle)
+* [SQL - Introduction](./SQL_introduction)
+* [SQL - More queries](./SQL_more_queries)
+* [Python - Object-relational mapping](./python-object_relational_mapping)
 
 ## Author
 * Felipe Villamizar - [GitHub](https://github.com/felipevcc)
