@@ -20,6 +20,7 @@ Repository with several projects and programming exercises in Python and SQL car
 * [SQL - Introduction](./SQL_introduction)
 * [SQL - More queries](./SQL_more_queries)
 * [Python - Object-relational mapping](./python-object_relational_mapping)
+* [JavaScript - Warm up](./javascript-warm_up)
 
 ## Author
 * Felipe Villamizar - [GitHub](https://github.com/felipevcc)
