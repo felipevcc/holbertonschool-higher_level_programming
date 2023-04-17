@@ -21,6 +21,7 @@ Repository with several projects and programming exercises in Python and SQL car
 * [SQL - More queries](./SQL_more_queries)
 * [Python - Object-relational mapping](./python-object_relational_mapping)
 * [JavaScript - Warm up](./javascript-warm_up)
+* [JavaScript - Objects, Scopes and Closures](./javascript_objects_scopes_closures)
 
 ## Author
 * Felipe Villamizar - [GitHub](https://github.com/felipevcc)
