@@ -23,6 +23,7 @@ Repository with several projects and programming exercises in Python and SQL car
 * [JavaScript - Warm up](./javascript-warm_up)
 * [JavaScript - Objects, Scopes and Closures](./javascript_objects_scopes_closures)
 * [JavaScript - Web scraping](./javascript-web_scraping)
+* [JavaScript - Web jQuery](./javascript-web_jquery)
 
 ## Author
 * Felipe Villamizar - [GitHub](https://github.com/felipevcc)
