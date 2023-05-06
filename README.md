@@ -1,6 +1,6 @@
 # Holberton School Higher-level Programming
 
-Repository with several projects and programming exercises in Python and SQL carried out during studies at [Holberton School](https://www.holbertonschool.com/).
+Repository with several projects and programming exercises in Python, JavaScript-Node.js and SQL carried out during studies at [Holberton School](https://www.holbertonschool.com/).
 
 ## Projects
 
